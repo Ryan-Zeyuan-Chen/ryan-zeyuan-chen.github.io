@@ -115,9 +115,30 @@
           </tr>
         </tbody></table>
         <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
-          <tr>
+          <tr onmouseout="skin_stop()" onmouseover="skin_start()">
             <td style="padding:20px;width:25%;vertical-align:middle">
-              <img src='images/AFM.jpg' width="160">
+              <div class="one">
+                <div class="two" id='skin_image'>
+                  <video width="160" muted autoplay loop>
+                    <source src="images/Skin-2.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                  </video>
+                </div>
+                <video width="160" muted autoplay loop>
+                  <source src="images/Skin-1.mp4" type="video/mp4">
+                  Your browser does not support the video tag.
+                </video>
+              </div>
+              <script type="text/javascript">
+                function skin_start() {
+                  document.getElementById('skin_image').style.opacity = "1";
+                }
+          
+                function skin_stop() {
+                  document.getElementById('skin_image').style.opacity = "0";
+                }
+                skin_stop()
+              </script>
             </td>
             <td style="padding:20px;width:75%;vertical-align:middle">
               <a href="https://onlinelibrary.wiley.com/doi/10.1002/adfm.202104665">
@@ -132,9 +153,9 @@
               <br>
               <em>Advanced Functional Materials</em>, 2021
               <br>
-              Videos: <a href="https://onlinelibrary.wiley.com/action/downloadSupplement?doi=10.1002%2Fadfm.202104665&file=adfm202104665-sup-0008-MovieS7.mp4">HMI</a>, <a href="https://onlinelibrary.wiley.com/action/downloadSupplement?doi=10.1002%2Fadfm.202104665&file=adfm202104665-sup-0014-MovieS13.mp4">Soft Robot</a> /
+              Videos: <a href="data/Skin-HMI.mp4">HMI</a>, <a href="data/Skin-Soft_Robotics.mp4">Soft Robot</a> /
               News: <a href="https://www.utoronto.ca/news/researchers-develop-stretchable-sensor-material-power-wearable-electronics-and-it-works-extreme">U of T News</a>, <a href="https://news.engineering.utoronto.ca/iskin-the-cold-tolerant-stretchable-sticky-sensor-that-could-power-a-new-generation-of-wearable-electronics-and-more/">U of T Engineering News</a>
-              <p>A novel hydrogel-based ionic skin (iSkin) capable of strain sensing is demonstrated with high toughness, high stretchability, excellent ambient stability, superior anti-freezing capability, and strong surface adhesion. This work also provides a new paradigm for developing high-performance artificial skins for wearable sensing and soft robotics.</p>
+              <p>A novel hydrogel-based ionic skin with demonstrated applications in wearable sensing, human-machine interaction and soft robotics.</p>
             </td>
           </tr>
         </tbody></table>
