@@ -115,9 +115,30 @@
           </tr>
         </tbody></table>
         <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
-          <tr>
+          <tr onmouseout="skin_stop()" onmouseover="skin_start()">
             <td style="padding:20px;width:25%;vertical-align:middle">
-              <img src='images/AFM.jpg' width="160">
+              <div class="one">
+                <div class="two" id='skin_image'>
+                  <video width="160" muted autoplay loop>
+                    <source src="images/Skin-2.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                  </video>
+                </div>
+                <video width="160" muted autoplay loop>
+                  <source src="images/Skin-1.mp4" type="video/mp4">
+                  Your browser does not support the video tag.
+                </video>
+              </div>
+              <script type="text/javascript">
+                function skin_start() {
+                  document.getElementById('skin_image').style.opacity = "1";
+                }
+          
+                function skin_stop() {
+                  document.getElementById('skin_image').style.opacity = "0";
+                }
+                skin_stop()
+              </script>
             </td>
             <td style="padding:20px;width:75%;vertical-align:middle">
               <a href="https://onlinelibrary.wiley.com/doi/10.1002/adfm.202104665">
@@ -132,9 +153,9 @@
               <br>
               <em>Advanced Functional Materials</em>, 2021
               <br>
-              Videos: <a href="https://onlinelibrary.wiley.com/action/downloadSupplement?doi=10.1002%2Fadfm.202104665&file=adfm202104665-sup-0008-MovieS7.mp4">HMI</a>, <a href="https://onlinelibrary.wiley.com/action/downloadSupplement?doi=10.1002%2Fadfm.202104665&file=adfm202104665-sup-0014-MovieS13.mp4">Soft Robot</a> /
+              Videos: <a href="data/Skin-HMI.mp4">HMI</a>, <a href="data/Skin-Soft_Robotics.mp4">Soft Robot</a> /
               News: <a href="https://www.utoronto.ca/news/researchers-develop-stretchable-sensor-material-power-wearable-electronics-and-it-works-extreme">U of T News</a>, <a href="https://news.engineering.utoronto.ca/iskin-the-cold-tolerant-stretchable-sticky-sensor-that-could-power-a-new-generation-of-wearable-electronics-and-more/">U of T Engineering News</a>
-              <p>A novel hydrogel-based ionic skin (iSkin) capable of strain sensing is demonstrated with high toughness, high stretchability, excellent ambient stability, superior anti-freezing capability, and strong surface adhesion. This work also provides a new paradigm for developing high-performance artificial skins for wearable sensing and soft robotics.</p>
+              <p>A novel hydrogel-based ionic skin with demonstrated applications in wearable sensing, human-machine interaction and soft robotics.</p>
             </td>
           </tr>
         </tbody></table>
@@ -164,19 +185,34 @@
           </tr>
         </tbody></table> -->
         <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
-          <tr>
+          <tr onmouseout="dataset_stop()" onmouseover="dataset_start()">
             <td style="padding:20px;width:25%;vertical-align:middle">
-              <img src='images/Dataset.png' width="160">
+              <div class="one">
+                <div class="two" id='dataset_image'>
+                  <img src="images/Dataset-2.png" width="160">
+                </div>
+                <img src='images/Dataset-1.png' width="160">
+              </div>
+              <script type="text/javascript">
+                function dataset_start() {
+                  document.getElementById('dataset_image').style.opacity = "1";
+                }
+          
+                function dataset_stop() {
+                  document.getElementById('dataset_image').style.opacity = "0";
+                }
+                dataset_stop()
+              </script>
             </td>
             <td style="padding:20px;width:75%;vertical-align:middle">
               <a href="https://ieeexplore.ieee.org/abstract/document/9981719">
                 <papertitle>A Dataset and Benchmark for Learning the Kinematics of Concentric Tube Continuum Robots</papertitle>
               </a>
               <br>
-              <a href="https://scholar.google.com/citations?user=6nbw0sgAAAAJ">Reinhard M. Grassmann</a>,
+              <a href="https://reinhardgrassmann.github.io/">Reinhard M. Grassmann</a>,
               <strong>Ryan Zeyuan Chen</strong>,
               <a href="https://scholar.google.ca/citations?user=0h1At3cAAAAJ">Nan Liang</a>,
-              <a href="https://crl.utm.utoronto.ca/jbk.html">Jessica Burgner-Kahrs</a>
+              <a href="https://crl.utm.utoronto.ca/jbk/">Jessica Burgner-Kahrs</a>
               <br>
               <em>Workshop on Learning from Diverse, Offline Data (L-DOD)</em>, 2022
               <br>
@@ -185,7 +221,7 @@
               <a href="https://ieeexplore.ieee.org/abstract/document/9981719">IROS</a> /
               <a href="https://openreview.net/forum?id=DW9uz_GZ0og">RSS L-DOD</a> /
               <a href="https://github.com/ContinuumRoboticsLab/CRL-Dataset-CTCR-Pose">Dataset</a>
-              <p>This work presents a dataset captured from a three-tube concentric tube continuum robot (CTCR) for use in learning-based kinematics research. Insights and lessons learned on joint space representation, shape representation in task space, and sampling strategies are shared as well. Furthermore, benchmark results for learning the forward kinematics using a simple, shallow feedforward neural network are provided.</p>
+              <p>The first public dataset of a three-tube concentric tube continuum robot, accompanied by benchmark results for learning the forward kinematics using a feedforward neural network.</p>
             </td>
           </tr>
         </tbody></table>
@@ -203,12 +239,30 @@
           </tr>
         </tbody></table>
         <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
-          <tr>
+          <tr onmouseout="mie1076_stop()" onmouseover="mie1076_start()">
             <td style="padding:20px;width:25%;vertical-align:middle">
-              <video width="160" muted autoplay loop>
-                <source src="images/MIE1076.mp4" type="video/mp4">
-                Your browser does not support the video tag.
-              </video>
+              <div class="one">
+                <div class="two" id='mie1076_image'>
+                  <video width="160" muted autoplay loop>
+                    <source src="images/MIE1076-2.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                  </video>
+                </div>
+                <video width="160" muted autoplay loop>
+                  <source src="images/MIE1076-1.mp4" type="video/mp4">
+                  Your browser does not support the video tag.
+                </video>
+              </div>
+              <script type="text/javascript">
+                function mie1076_start() {
+                  document.getElementById('mie1076_image').style.opacity = "1";
+                }
+          
+                function mie1076_stop() {
+                  document.getElementById('mie1076_image').style.opacity = "0";
+                }
+                mie1076_stop()
+              </script>
             </td>
             <td style="padding:20px;width:75%;vertical-align:middle">
               <papertitle>Intelligent Medical Robotic System for Colonoscopies</papertitle>
@@ -221,12 +275,30 @@
           </tr>
         </tbody></table>
         <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
-          <tr>
+          <tr onmouseout="mie1075_stop()" onmouseover="mie1075_start()">
             <td style="padding:20px;width:25%;vertical-align:middle">
-              <video width="160" muted autoplay loop>
-                <source src="images/MIE1075.mp4" type="video/mp4">
-                Your browser does not support the video tag.
-              </video>
+              <div class="one">
+                <div class="two" id='mie1075_image'>
+                  <video width="160" muted autoplay loop>
+                    <source src="images/MIE1075-2.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                  </video>
+                </div>
+                <video width="160" muted autoplay loop>
+                  <source src="images/MIE1075-1.mp4" type="video/mp4">
+                  Your browser does not support the video tag.
+                </video>
+              </div>
+              <script type="text/javascript">
+                function mie1075_start() {
+                  document.getElementById('mie1075_image').style.opacity = "1";
+                }
+          
+                function mie1075_stop() {
+                  document.getElementById('mie1075_image').style.opacity = "0";
+                }
+                mie1075_stop()
+              </script>
             </td>
             <td style="padding:20px;width:75%;vertical-align:middle">
               <papertitle>Intelligent Dog Walking Robot</papertitle>
@@ -240,12 +312,30 @@
           </tr>
         </tbody></table>
         <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
-          <tr>
+          <tr onmouseout="rob498_stop()" onmouseover="rob498_start()">
             <td style="padding:20px;width:25%;vertical-align:middle">
-              <video width="160" muted autoplay loop>
-                <source src="images/ROB498.mp4" type="video/mp4">
-                Your browser does not support the video tag.
-              </video>
+              <div class="one">
+                <div class="two" id='rob498_image'>
+                  <video width="160" muted autoplay loop>
+                    <source src="images/ROB498-2.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                  </video>
+                </div>
+                <video width="160" muted autoplay loop>
+                  <source src="images/ROB498-1.mp4" type="video/mp4">
+                  Your browser does not support the video tag.
+                </video>
+              </div>
+              <script type="text/javascript">
+                function rob498_start() {
+                  document.getElementById('rob498_image').style.opacity = "1";
+                }
+          
+                function rob498_stop() {
+                  document.getElementById('rob498_image').style.opacity = "0";
+                }
+                rob498_stop()
+              </script>
             </td>
             <td style="padding:20px;width:75%;vertical-align:middle">
               <papertitle>Intelligent Robotic Shopping Cart</papertitle>
@@ -258,36 +348,34 @@
             </td>
           </tr>
         </tbody></table>
-        <!-- <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
-          <tr>
-            <td style="padding:20px;width:25%;vertical-align:middle">
-              <img src='images/MIE505.png' width="160">
-            </td>
-            <td style="padding:20px;width:75%;vertical-align:middle">
-              <papertitle>Independent Control of Three Magnetic Microrobots in Three Dimensions</papertitle>
-              <br>
-                MIE505 Micro/Nano Robotics, University of Toronto
-              <br>
-              <a href="data/MIE505.pdf">Final Report</a> /
-              <a href="data/MIE505_Literature_Review.pdf">Literature Review</a>
-              <p>The development of a robust control strategy to independently control three magnetic microrobots in a three-dimensional workspace.</p>
-            </td>
-          </tr>
-        </tbody></table> -->
         <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
-          <tr>
+          <tr onmouseout="aps360_stop()" onmouseover="aps360_start()">
             <td style="padding:20px;width:25%;vertical-align:middle">
-              <img src='images/APS360.png' width="160">
+              <div class="one">
+                <div class="two" id='aps360_image'>
+                  <img src="images/APS360-2.jpg" width="160">
+                </div>
+                <img src='images/APS360-1.jpg' width="160">
+              </div>
+              <script type="text/javascript">
+                function aps360_start() {
+                  document.getElementById('aps360_image').style.opacity = "1";
+                }
+          
+                function aps360_stop() {
+                  document.getElementById('aps360_image').style.opacity = "0";
+                }
+                aps360_stop()
+              </script>
             </td>
             <td style="padding:20px;width:75%;vertical-align:middle">
-              <a href="https://github.com/ryan-zeyuan-chen/wine">
-                <papertitle>Deep Learning Wine Grape Variety Recognition</papertitle>
-              </a>
+              <papertitle>Deep Learning Wine Grape Variety Recognition</papertitle>
               <br>
               <a href="https://ryan-zeyuan-chen.github.io/APS360/">APS360 Applied Fundamentals of Machine Learning</a>, University of Toronto
               <br>
               <a href="data/APS360.pdf">Final Report</a> /
-              <a href="data/APS360.mp4">Presentation</a>
+              <a href="data/APS360.mp4">Presentation</a> /
+              <a href="https://github.com/ryan-zeyuan-chen/wine">Code</a>
               <p>The recognition of wine grape variety through wine taste descriptions utilizing the long short-term memory (LSTM) neural network model.</p>
             </td>
           </tr>
@@ -313,14 +401,12 @@
               <img src='images/Pacbot.jpg' width="160">
             </td>
             <td style="padding:20px;width:75%;vertical-align:middle">
-              <a href="https://www.utra.ca/teams/pacbot/">
-                <papertitle>Pacbot</papertitle>
-              </a>
+              <papertitle>PacBot</papertitle>
               <br>
                 <a href="https://www.utra.ca/">University of Toronto Robotics Association</a>
               <br>
-              <a href="https://harvardrobotics.com/pacbots#pacbotinfo">Competition</a>
-              <p>Organized and led weekly meetings with subteam members focusing on the design and implementation of circuits and sensors for the autonomous robot.</p>
+              <a href="https://www.utra.ca/teams/pacbot/">Competition Details</a>
+              <p>The design and construction of an autonomous robot for the PacBot competition hosted by the Harvard Undergraduate Robotics Club, mimicking the traditional Pac-Man game in a physical arena. Organized and led weekly meetings with team members, focusing on the design and implementation of circuits and sensors for the robot as the electrical team lead.</p>
             </td>
           </tr>
         </tbody></table>
